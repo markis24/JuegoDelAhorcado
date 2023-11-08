@@ -12,6 +12,8 @@ Se verificará que la opción sea correcta. En caso de error, se mostrará un me
 
 El programa no se detendrá hasta que se seleccione la opción 3.
 
+# Primer programa por consola
+
 ## Si el usuario escribe 1 (Empieza el programa):
 
 1. Nos saldra un prompt y nos pide una palabra
@@ -42,3 +44,9 @@ El programa no se detendrá hasta que se seleccione la opción 3.
 ## Si el usuario escribe 3 (Salir del programa):
 
 * Saldremos del juego.
+
+
+# Segundo programa con interficie grafica (HTML y CSS)
+
+
+
