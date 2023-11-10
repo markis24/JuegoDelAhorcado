@@ -12,7 +12,7 @@ switch (menu) {
         break;
     case 3:
         // Seleccionamos el numero 3 y salimos del programa
-        console.log("El juego ha terminado")
+        console.log("El joc del penjat ha finalitzat")
         break;
 }       
 }
@@ -22,63 +22,58 @@ let total_perdudes = 0;
 let has_ganado = false;
 
 function IniciarJoc(){
-    let numero_intents = 0;
+    let numeroIntents = 0;
     total_partides++;
     // Numero de veces que podemos probar 
-    const intentos_maximos = 6;
-    const palabra = prompt("Escribe una palabra: ");   
-    for (i=1 ; i < palabra.length; i++){
+    const intentsMaxims = 6;
+    const paraula = prompt("Escriu una paraula: ");   
+    for (i=1 ; i < paraula.length; i++){
         console.log("_");
     }
-    while(numero_intents <= intentos_maximos || has_ganado==false){
-        let letra = prompt("Escribe una letra: ");
-        if(ValidarLetra(letra)){
-            if(ComprobacionLetra(palabra,letra)){
-                console.log(letra);
+    while(numeroIntents <= intentsMaxims || has_ganado==false){
+        let lletra = prompt("Escriu una lletra: ");
+        if(validarLletra(lletra)){
+            if(comprobacioLletra(paraula,lletra)){
+                console.log(lletra);
             }
             else{
-                console.log("Lletres fallades: " + letra )
-                numero_intents++;
+                console.log("Lletres fallades: " + lletra )
+                numeroIntents++;
             }
         }
         
     }
-    if (intentos_maximos <= numero_intents){
-        console.log("Has ganado el juego ")
+    if (intentsMaxims <= numeroIntents){
+        console.log("Has ganyat ")
         has_ganado = true;
         Menu();
     }else{
-        console.log("L'usuari mor penjat");
+        console.log("L'usuari ha mort penjat");
         Menu();
     }
 }
-function ValidarLetra(letra){
-    if(letra.match(/[a-z]/i) && letra.length == 1) {
+function validarLletra(lletra){
+    if(lletra.match(/[a-z]/i) && lletra.length == 1) {
         return true;
     }
     else {
-        console.log("No es una letra y no se aceptan otros caracteres")
+        console.log("No es una lletra y no se aceptan otros caracteres")
         return false;
     }
 }
-function ComprobacionLetra(palabra,letra){
-    if(palabra.includes(letra)){
-        console.log("Existe la letra " + letra)
+function comprobacioLletra(paraula,lletra){
+    if(paraula.includes(lletra)){
+        console.log("Existeix la lletra " + lletra)
         return true;
     }
     else{
-        console.log("No existe la letra " + letra)
+        console.log("No existeix la lletra " + lletra)
         return false;
     }
 }
 
-
-
-
-
-
 function Estadistiques() {
-    console.log("Total de partides: Porcentaje de partidas " + total_partides );
-    console.log("Partides ganadas: Porcentaje de partidas  " + total_guanyades);
-    console.log("Partidas perdudes: Porcentaje de partidas " + total_perdudes);
+    console.log("Total de partides:  " + total_partides );
+    console.log("Partides ganadas:   " + total_guanyades);
+    console.log("Partidas perdudes:  " + total_perdudes);
 }
