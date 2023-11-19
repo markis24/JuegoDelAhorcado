@@ -23,10 +23,10 @@ El programa no se detendrá hasta que se seleccione la opción 3.
 5. En cada tirada podemos ver si ha fallado o ha acertado y por consola mostraremos los resultados
 
 * Ejemplo:  C _ S _
-*           Letras falladas 3/7: B, X, E
+* Letras falladas 3/7: B, X, E
 
-6. Si el usuario acierta la palabra mostraremos un mensaje de enorabuena i volveremos al menu principal
-7. Si el usuario "muere ahorcado" mostraremos un mensaje y volveremos al menu
+6. Si el usuario acierta la palabra mostraremos un mensaje de Enoharabuena i volveremos al menu principal
+7. Si el usuario muere ahorcado mostraremos un mensaje y volveremos al menu principal
 
 
 ## Si el usuario escribe 2 (Estadísticas del programa):
@@ -46,35 +46,37 @@ El programa no se detendrá hasta que se seleccione la opción 3.
 * Saldremos del juego.
 
 
-# Segundo programa con interficie grafica (HTML y Boostrap)
+# Segundo programa con interficie grafica 
 
-Ahora tenemos que hacer el mismo programa del ahorcado ,pero ahora añadiendo interficie grafica con HTML y Boostrap.
+Ahora tenemos que hacer el mismo programa del ahorcado ,pero ahora añadiendo interficie grafica.
 
 ### Requisitos del programa
 
 1. Tienen que aparecer 2 botones (Inici partida,Estadistiques)
+2. Si damos click al Boton Inici Partida 
 
-2. Si damos click al Boton Inici Partida
-
-*   Tenemos que mostrar imagenes del juego del ahorcado cuando va iniciar una partida ,si no acierta la palabra    *   secreta . Mostraremos una imagen del muñeco del ahorcado
-*   Mostramos al usuario el abecedario cuando va iniciar la partida
-*   Mostramos al usuario la cantidad de caracteres que tiene su palabra secreta
+*   Tenemos que mostrar imagenes del muñeco del juego del ahorcado cuando va iniciar una partida 
+*   Si ,no acierta una letra de la palabra secreta cambiaremos ,la imagen del muñeco del ahorcado .
+*   En cambio si acierta no cambiaremos la imagen del muñeco del ahorcado
+*   Tenemos que mostrar al usuario el abecedario cuando va iniciar la partida
+*   Tenemos que mostrar al usuario la cantidad de caracteres que tiene su palabra secreta
 *   Seguiremos mostrando los botones de Inici partida y Estadistiques
+*   Si ,en la mitad de la partida damos click al boton.Hacemos que se inicie todo el programa de nuevo.
 
 
 3. Si damos click al Boton Estadistiques
 
-*   Se tiene que abrir una nueva ventana donde nos muestra las estadisticas del juego hasta que hemos dado click al boton de estadisticas
+*   Se tiene que abrir una nueva ventana donde nos muestra las estadisticas del juego.
 
 
 4. Si al final no acertamos todas las letras de la palabra secreta
 
-*   Nos muestra una alerta de que el usuario a muerto ahorcado
+*   Nos muestra todas las letras que hemos utilizado para adivinar la palabra
+*   Tambien nos tiene que aparecer una alerta de que hemos muerto ahorcado
 
 5. Si al final hemos acertado todas las letras de la palabra secreta
 
-
-*   Nos tiene que mostrar todas las letras que hemos utilizado para adivinar la palabra
-*   Tambien nos tiene que aparecer un mensaje de que hemos ganado el juego del ahorcado
+*   Nos muestra todas las letras que hemos utilizado para adivinar la palabra
+*   Tambien nos tiene que aparecer una alerta de que hemos ganado el juego del ahorcado
 
 
