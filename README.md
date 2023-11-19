@@ -36,7 +36,7 @@ El programa no se detendrá hasta que se seleccione la opción 3.
 * Mostraremos la cantidad de partidas perdidas y el %
 
 * Ejemplo:
-*          Total de partidas: 8
+* Total de partidas: 8
 *          Partidas ganadas (50%):  4
 *          Partidas perdidas (50%): 4
 
