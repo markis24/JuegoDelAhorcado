@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El juego del ahorcado</title>
+    <!-- Enlace a la hoja de estilo de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<!-- Botones para iniciar una partida y ver estadísticas -->
+<button class="btn btn-success m-3" onclick="nuevaPartida()">Iniciar una partida</button>
+<button class="btn btn-info m-3" onclick="estadisticas()">Estadisticas</button>
+
+<!-- Contenedor para mostrar la palabra secreta y su progreso -->
+<div id="juegoDelAhorcado"></div>
+
+<!-- Contenedor para mostrar las letras del abecedario -->
+<div id="abecedario"></div>
+
+<!-- Imagen del progreso del ahorcado -->
+<img src="img_penjat/penjat_0.png" alt="imagen" id="imagenAhorcado">
+
+<!-- Contenedor para mostrar las letras utilizadas durante la partida -->
+<div id="letrasUtilizadas"></div>
+
+
+<!-- Inclusión del script "penjat.js" que contiene la lógica del juego de ahorcado -->
+<script src="penjat.js"></script>
+
+<!-- Inclusión del script de Bootstrap para el soporte de componentes y estilos -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
